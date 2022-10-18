@@ -22,6 +22,42 @@ class ActionProvider {
     );
     this.updateChatbotState(message)
   };
+  handleDataList = () => {
+    const message = this.createChatBotMessage(
+      "Fantastic, I've got the following resources for you on Data visualization:",
+      {
+        widget: "dataLinks",
+      }
+    );
+    this.updateChatbotState(message)
+  };
+  handleAPIList = () => {
+    const message = this.createChatBotMessage(
+      "Fantastic, I've got the following resources for you on API's:",
+      {
+        widget: "apiLinks",
+      }
+    );
+    this.updateChatbotState(message)
+  };
+  handleSecurityList = () => {
+    const message = this.createChatBotMessage(
+      "Fantastic, I've got the following resources for you on Security:",
+      {
+        widget: "securityList",
+      }
+    );
+    this.updateChatbotState(message)
+  };
+  handleInterviewList = () => {
+    const message = this.createChatBotMessage(
+      "Fantastic, I've got the following resources for you on Interview prep:",
+      {
+        widget: "interviewLinks",
+      }
+    );
+    this.updateChatbotState(message)
+  };
   greet() {
     const greetingMessage = this.createChatBotMessage("Hi");
     this.updateChatbotState(greetingMessage);
