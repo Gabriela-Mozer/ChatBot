@@ -13,7 +13,7 @@ class ActionProvider {
     //  this.stateRef = stateRef;
     //  this.createCustomMessage = createCustomMessage;
   }
-  handleJavscriptList = () => {
+  handleJavascriptList = () => {
     const message = this.createChatBotMessage(
       "Fantastic, I've got the following resources for you on Javascript:",
       {
