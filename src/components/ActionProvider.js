@@ -61,6 +61,18 @@ class ActionProvider {
   greet() {
     const greetingMessage = this.createChatBotMessage("Hi");
     this.updateChatbotState(greetingMessage);
+  };
+  bye() {
+    const byeMessage = this.createChatBotMessage("ok bye");
+    this.updateChatbotState(byeMessage);
+  };
+  karen() {
+    const karenMessage = this.createChatBotMessage("go f**k yourself Karen");
+    this.updateChatbotState(karenMessage);
+  };
+  optional() {
+    const optionalMessage = this.createChatBotMessage("Sorry, I don't undestand");
+    this.updateChatbotState(optionalMessage);
   }
   updateChatbotState(message) {
     this.setState((prevState) => ({

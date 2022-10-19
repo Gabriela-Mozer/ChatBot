@@ -1,18 +1,31 @@
 class MessageParser {
-    constructor(actionProvider, state) {
-      this.actionProvider = actionProvider;
-      this.state = state;
+  constructor(actionProvider, state) {
+    this.actionProvider = actionProvider;
+    this.state = state;
+  }
+
+  parse(message) {
+    console.log(message);
+    const lowerCaseMessage = message.toLowerCase();
+    if (lowerCaseMessage.includes("hello") || lowerCaseMessage.includes("hi")) {
+      this.actionProvider.greet();
     }
-  
-    parse(message) {
-      console.log(message)
-      const lowerCaseMessage = message.toLowerCase();
-      if(lowerCaseMessage.includes('hello')){
-        this.actionProvider.greet()
-      }
+    if (
+      lowerCaseMessage.includes("bye") ||
+      lowerCaseMessage.includes("i don't need help")
+    ) {
+      this.actionProvider.bye();
+    }
+    if (
+      lowerCaseMessage.includes("manager") 
+    ) {
+      this.actionProvider.karen();
+    }else{
+      this.actionProvider.optional();
     }
   }
-  
-  export default MessageParser;
+}
 
-  //Wersja z funkcją
+export default MessageParser;
+
+//Wersja z funkcją
