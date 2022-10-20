@@ -9,19 +9,14 @@ class MessageParser {
     const lowerCaseMessage = message.toLowerCase();
     if (lowerCaseMessage.includes("hello") || lowerCaseMessage.includes("hi")) {
       this.actionProvider.greet();
-    }
-    if (
+    } else if (
       lowerCaseMessage.includes("bye") ||
       lowerCaseMessage.includes("i don't need help")
     ) {
       this.actionProvider.bye();
-    }
-    if (
-      lowerCaseMessage.includes("manager") 
-    ) {
+    } else if (lowerCaseMessage.includes("manager")) {
       this.actionProvider.karen();
-      
-    }else  {
+    } else {
       this.actionProvider.optional();
     }
   }
