@@ -20,7 +20,8 @@ class MessageParser {
       lowerCaseMessage.includes("manager") 
     ) {
       this.actionProvider.karen();
-    }else{
+      
+    }else  {
       this.actionProvider.optional();
     }
   }

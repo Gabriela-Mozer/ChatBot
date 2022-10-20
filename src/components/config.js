@@ -69,29 +69,6 @@ const config = {
       },
     },
     {
-      widgetName: "dataLinks",
-      widgetFunc: (props) => <LinkList {...props} />,
-      props: {
-        options: [
-          {
-            text: "Introduction to Data",
-            url: "https://keebo.ai/2021/06/07/what-is-data-learning-and-why-is-it-important/",
-            id: 1,
-          },
-          {
-            text: "Data Learning",
-            url: "https://www.datalearning.eu/en/training-catalogue/",
-            id: 2,
-          },
-          {
-            text: "How to start for noncoders",
-            url: "https://towardsdatascience.com/cant-code-here-is-the-best-way-to-learn-to-code-for-data-science-bfb0581ded37",
-            id: 3,
-          },
-        ],
-      },
-    },
-    {
       widgetName: "apiLinks",
       widgetFunc: (props) => <LinkList {...props} />,
       props: {
