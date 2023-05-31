@@ -1,3 +1,7 @@
+"# Chatbot" 
+Inspiration and main idea: https://www.freecodecamp.org/news/how-to-build-a-chatbot-with-react/
+Documentation : https://fredrikoseberg.github.io/react-chatbot-kit-docs/ 
+This chatbot can help you learn. Also you can talk with him (just a little)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
